@@ -1,9 +1,17 @@
 import Card from "./Card";
 import Button from "./Button";
 import styles from "./ErrorModal.module.css";
+// import { useState } from "react";
 
 const ErrorModule = (props) => {
+  // const [okieOnclick, setOkieOnclick] = useState(false)
+
+  // const okieHandler = event => {
+  //     setOkieOnclick(true);
+  // }
+
   return (
+    //    !okieOnclick &&
     <div>
       <div className={styles.backdrop} />
       <Card className={styles.modal}>
@@ -14,7 +22,7 @@ const ErrorModule = (props) => {
           <p>{props.message}</p>
         </div>
         <footer className={styles.actions}>
-          <Button>Okie</Button>
+          <Button onClick={props.onConfirm}>Okie</Button>
         </footer>
       </Card>
     </div>
