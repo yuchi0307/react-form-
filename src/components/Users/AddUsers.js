@@ -3,6 +3,7 @@ import styles from "./AddUsers.module.css";
 
 import Card from "../UI/Card";
 import Button from "../UI/Button";
+import ErrorModal from "../UI/ErrorModal";
 
 const AddUsers = (props) => {
   const [enteredName, setEnteredName] = useState("");
@@ -41,6 +42,8 @@ const AddUsers = (props) => {
   
 
   return (
+    <div>
+    <ErrorModal title="An error occured!" message="Something went wrong!" />
     <Card className={styles.input}>
         {/* 這邊的className是由Card組件prop而來的 
         因為Card 是我們客製化的組件，不如普通html會有className等屬性在react中讀得懂css應用，
@@ -55,6 +58,7 @@ const AddUsers = (props) => {
         <Button type="submit">Add User</Button>
       </form>
     </Card>
+    </div>
   );
 };
 
