@@ -15,12 +15,17 @@ function App(props) {
 
   };
   
+  let content = (<p style={{textAlign: 'center'}}>No users found. Maybe add one?</p>)
+  
+  if(usersInfo.length!==0){
+    content =  (<UserList users={usersInfo} />)
+  }
 
   return (
     <div>
       <section >
         <AddUsers onAddUser={addUserHandler} />
-        <UserList users={usersInfo} />        
+        {content}    
       </section>
     </div>
   );

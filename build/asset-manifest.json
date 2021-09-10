@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-form-exercise/static/css/main.c8ca21bc.chunk.css",
+    "main.js": "/react-form-exercise/static/js/main.62a8d807.chunk.js",
+    "main.js.map": "/react-form-exercise/static/js/main.62a8d807.chunk.js.map",
+    "runtime-main.js": "/react-form-exercise/static/js/runtime-main.f4aae7dc.js",
+    "runtime-main.js.map": "/react-form-exercise/static/js/runtime-main.f4aae7dc.js.map",
+    "static/js/2.7d791ee7.chunk.js": "/react-form-exercise/static/js/2.7d791ee7.chunk.js",
+    "static/js/2.7d791ee7.chunk.js.map": "/react-form-exercise/static/js/2.7d791ee7.chunk.js.map",
+    "index.html": "/react-form-exercise/index.html",
+    "static/css/main.c8ca21bc.chunk.css.map": "/react-form-exercise/static/css/main.c8ca21bc.chunk.css.map",
+    "static/js/2.7d791ee7.chunk.js.LICENSE.txt": "/react-form-exercise/static/js/2.7d791ee7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f4aae7dc.js",
+    "static/js/2.7d791ee7.chunk.js",
+    "static/css/main.c8ca21bc.chunk.css",
+    "static/js/main.62a8d807.chunk.js"
+  ]
+}
