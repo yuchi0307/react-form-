@@ -2,7 +2,7 @@
 React表單練習
 
 
-JSX缺點：只能return 一個< div>，造成太多的html tag
+JSX缺點：一個JSX root只能return 一個< div>，造成太多的html tag
 
 解決方法：
 1. <></>
