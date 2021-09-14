@@ -10,12 +10,13 @@ JSX缺點：一個JSX root只能return 一個< div>，造成太多的html tag
 3. <自己做componet>props.children<自己做componet/>
 
 💙 portals 💙
--> 如果某個component只是彈跳視窗（modal），卻包在其他component中並用css控制出現時機，就像寫了一個< div>硬塞 eventListener 把他做成< button>一樣，可行但不好
+-> 如果某個component只是彈跳視窗（modal），卻包在其他component中並用css控制出現時機，雖然可行但以架構來說並不好，因為可能會被層層包覆的component影響到樣式、使用性能、管理等。
+
 
 -> ReactDOM.createPortal(child, DOM element)使我們需要的 child 可以在指定的 DOM node 中出現，例如彈跳視窗可以和 root 並列於 html 架構中。
 
 💙 ref 💙
-->Let’s say you want to change the value of an <input> element, but without using props or re-rendering the whole component.
+->Let’s say you want to get access the value of an <input> element, but without using props or re-rendering the whole component.
 
 -> 單純讀取資料可用，且用 ref 讀資料的 input component 稱之為 uncontrolled component。
 
