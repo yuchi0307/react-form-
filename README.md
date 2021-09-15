@@ -16,7 +16,12 @@ JSX缺點：一個JSX root只能return 一個< div>，造成太多的html tag
 -> ReactDOM.createPortal(child, DOM element)使我們需要的 child 可以在指定的 DOM node 中出現，例如彈跳視窗可以和 root 並列於 html 架構中。
 
 💙 ref 💙
-->Let’s say you want to get access the value of an <input> element, but without using props or re-rendering the whole component.
+
+-> useRef() 建立並回傳帶有 current 屬性的物件。
+
+並不觸發 re-render，所以資料更新時，畫面並不會隨之更新。(useState不同)
+
+即便component re-render，仍可取得同一物件內的值。
 
 -> 單純讀取資料可用，且用 ref 讀資料的 input component 稱之為 uncontrolled component。
 
